@@ -50,7 +50,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 3600
     tolerance: 50
     proxies:
       - 🇦🇲_AM_亚美尼亚->🇺🇸_US_美国
