@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-10-18 16:38:36
+# 创建时间：2023-10-25 10:39:39
 # 使用模版：V2RaySE 默认模版
-# 节点数量：8
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,95 +85,60 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇫🇷_FR_法国_1","type":"ss","server":"51.158.195.96","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"asb2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"asb2.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.21.93.238","port":443,"cipher":"auto","uuid":"64203121-39f5-4f05-b842-a7697ef379a1","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/okeyvws","headers":{"host":"s3.folow-r18.cfd"}}}
   - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"mrb2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mrb2.shabijichang.com"}}}
-  - {"name":"🇫🇷_FR_法国_2","type":"ss","server":"51.158.195.96","port":110,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇳_CN_中国","type":"vmess","server":"41.kccic2pa.xyz","port":50041,"cipher":"auto","uuid":"5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇫🇷_FR_法国_3","type":"ss","server":"146.59.111.183","port":443,"password":"asdKkaskJKfnsa","cipher":"aes-256-cfb"}
-  - {"name":"🇩🇪_DE_德国","type":"vmess","server":"45.155.249.151","port":80,"cipher":"auto","uuid":"9d5e69d2-46cf-4865-95fe-a2ee8c52a013","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇧🇷_BR_巴西","type":"vmess","server":"sbl4.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl4.shabijichang.com"}}}
+  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vmess","server":"flkf2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"flkf2.shabijichang.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,14 +161,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷_FR_法国_1
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国->🇬🇧_GB_英国
-      - 🇫🇷_FR_法国_2
-      - 🇨🇳_CN_中国
-      - 🇫🇷_FR_法国_3
-      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国->🇧🇷_BR_巴西
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
 
 rules:
 # 本地/局域网地址
