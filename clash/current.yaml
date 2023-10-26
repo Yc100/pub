@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-10-26 23:54:23
+# 创建时间：2023-10-27 00:12:17
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：2
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,7 +21,6 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇺🇸_US_美国->🇧🇷_BR_巴西","type":"vmess","server":"sbl4.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl4.shabijichang.com"}}}
   - {"name":"🇺🇸_US_美国","type":"vmess","server":"sbl2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl2.shabijichang.com"}}}
   - {"name":"🇺🇸_US_美国->🇬🇧_GB_英国","type":"vmess","server":"mrb2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mrb2.shabijichang.com"}}}
 proxy-groups:
@@ -30,7 +29,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: ♻️ 自动选择
@@ -39,7 +37,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🌍 国外媒体
@@ -48,7 +45,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 📲 电报信息
@@ -56,7 +52,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: Ⓜ️ 微软服务
@@ -64,7 +59,6 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🍎 苹果服务
@@ -72,7 +66,6 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
   - name: 🎯 全球直连
@@ -97,7 +90,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸_US_美国->🇧🇷_BR_巴西
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国->🇬🇧_GB_英国
 
